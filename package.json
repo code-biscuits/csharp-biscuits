@@ -1,6 +1,6 @@
 {
   "name": "csharp-biscuits",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Add annotations, hereafter unto for known as \"Biscuits\", to the end of the line of closing brackets. These could be functions, if statements, etc. Make csharp soup digestible!",
   "repository": {
     "type": "git",

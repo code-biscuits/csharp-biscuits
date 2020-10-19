@@ -34,6 +34,10 @@ The HTML extension getting fixed will be the blueprint for fixing other extensio
 
 ## Release Notes
 
+### 0.0.3
+
+Fix annotations in nested children
+
 ### 0.0.2
 
 Fix wasm dependency pathing

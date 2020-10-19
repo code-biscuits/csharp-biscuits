@@ -53,32 +53,18 @@ export const activate = createActivate(
         nodes.forEach((node: TreeSitter.SyntaxNode) => {
 
           if(node.children.length > 0) {
-            children = [...node.children];
+            children = [...children, ...node.children];
           }
 
           const startLine = node.startPosition.row;
           const endLine = node.endPosition.row;
 
           let contentText = "";
-          if(node.firstNamedChild) {
-            let namedChild: TreeSitter.SyntaxNode | null = node.firstNamedChild;
 
-            console.log('text', node.text);
-            const text = node.text.trim();
-            if(text.charAt(0) !== '{' && text.charAt(0) !== '(') {
-              contentText = text;
-            }
-
-            // while(namedChild) {
-            //   const text = namedChild.text.trim();
-            //   if(text.charAt(0) !== '{' && text.charAt(0) !== '(') {
-            //     contentText += ` ${text}`;
-            //   }
-            //   namedChild = namedChild.nextNamedSibling;
-            // }
+          const text = node.text.trim();
+          if(text.charAt(0) !== '{' && text.charAt(0) !== '(') {
+            contentText = text;
           }
-
-
 
           let maxLength: number =
             vscode.workspace.getConfiguration().get(CONFIG_MAX_LENGTH) || 0;
