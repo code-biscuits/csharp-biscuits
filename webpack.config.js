@@ -41,8 +41,8 @@ const config = {
   plugins: [
     new CopyPlugin({
       patterns: [
-        path.resolve(__dirname, "src", "tree-sitter.wasm"),
-        path.resolve(__dirname, "src", "tree-sitter-c_sharp.wasm"),
+        path.resolve(__dirname, "tree-sitter.wasm"),
+        path.resolve(__dirname, "tree-sitter-c_sharp.wasm"),
       ],
     }),
   ],
