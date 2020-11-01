@@ -1,6 +1,12 @@
+# DEPRECATION NOTICE
+
+Development on this plugin has ceased. Further C Sharp Biscuit support will be inside of [Assorted Biscuits](https://marketplace.visualstudio.com/items?itemName=CodeBiscuits.assorted-biscuits). The new extension solves several bugs and offers support for several languages at once via Tree Sitter.
+
+We plan on unpublishing this extension January 1st, 2021.
+
 # csharp-biscuits README
 
-Use csharp-biscuits to make css soup and spaghetti more digestible. Annotate ALL the end brackets!!!
+Use csharp-biscuits to make code soup and spaghetti more digestible. Annotate ALL the end brackets!!!
 
 Watch the text by the end brackets to see Biscuits in action.
 
@@ -33,6 +39,10 @@ The HTML extension getting fixed will be the blueprint for fixing other extensio
   - default: `80`,
 
 ## Release Notes
+
+### 0.0.4
+
+- Deprecation Notice in README
 
 ### 0.0.3
 
